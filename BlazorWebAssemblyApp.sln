@@ -1,5 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorServer", "BlazorServer\BlazorServer.csproj", "{7A39F2DD-D408-4AEB-A6A4-30A5F4F8EF04}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorProducts.Client", "BlazorProducts.Client\BlazorProducts.Client.csproj", "{65B3B975-0D5E-4004-9DBA-E773EEF5B737}"
@@ -18,5 +19,11 @@ Global
 		{65B3B975-0D5E-4004-9DBA-E773EEF5B737}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65B3B975-0D5E-4004-9DBA-E773EEF5B737}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65B3B975-0D5E-4004-9DBA-E773EEF5B737}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
+		$0.VersionControlPolicy = $2
 	EndGlobalSection
 EndGlobal
