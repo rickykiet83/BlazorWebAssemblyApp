@@ -8,11 +8,14 @@
         any time you want.
     </p>
     <p>
-        <img src="/assets/iphone-12-pro-blue-hero.png" alt="products image for the Home component" class="img-fluid" />
+        <img @attributes="AdditionalAttributes" class="img-fluid" />
     </p>
 </div>
 @code 
 {
     [Parameter]
     public string Title { get; set; }
+
+    [Parameter(CaptureUnmatchedValues = true)]
+    public Dictionary<string, object> AdditionalAttributes { get; set; }
 }
