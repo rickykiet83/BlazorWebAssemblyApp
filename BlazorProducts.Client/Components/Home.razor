@@ -1,6 +1,6 @@
 <div style="text-align:center">
     <h1>
-        Welcome to the BlazorProducts.Client application.
+        @Title
     </h1>
     <p>
         Feel free to
@@ -13,4 +13,6 @@
 </div>
 @code 
 {
+    [Parameter]
+    public string Title { get; set; }
 }
