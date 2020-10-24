@@ -20,7 +20,10 @@ namespace BlazorProducts.Client
             builder.Logging.AddConfiguration(builder.Configuration.GetSection("Logging"));
 
             builder.Services.AddScoped(
-                sp => new HttpClient {BaseAddress = new Uri(builder.HostEnvironment.BaseAddress)});
+                sp => new HttpClient
+                {
+                    BaseAddress = new Uri(builder.HostEnvironment.BaseAddress)
+                });
 
             await builder.Build().RunAsync();
         }
