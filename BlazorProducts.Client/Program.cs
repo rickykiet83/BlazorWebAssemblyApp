@@ -3,6 +3,7 @@ using System.Net.Http;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Text;
+using BlazorProducts.Client.HttpRepository;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -19,11 +20,16 @@ namespace BlazorProducts.Client
 
             builder.Logging.AddConfiguration(builder.Configuration.GetSection("Logging"));
 
-            builder.Services.AddScoped(
-                sp => new HttpClient
+            builder.Services.AddHttpClient("ProductsAPI",
+                cl =>
                 {
-                    BaseAddress = new Uri(builder.HostEnvironment.BaseAddress)
+                    new Uri("https://localhost:5011/api/");
                 });
+
+            builder.Services.AddScoped(
+                sp => sp.GetService<IHttpClientFactory>().CreateClient("ProductsAPI"));
+
+            builder.Services.AddScoped<IProductHttpRepository, ProductHttpRepository>();
 
             await builder.Build().RunAsync();
         }

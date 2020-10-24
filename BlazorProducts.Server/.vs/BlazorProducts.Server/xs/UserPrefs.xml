@@ -1,0 +1,46 @@
+﻿<Properties StartupConfiguration="{31A916BE-163D-473F-B70E-D2B92BCB7FFE}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BlazorProducts.Server/appsettings.json">
+    <Files>
+      <File FileName="Entities/Models/Product.cs" Line="1" Column="1" />
+      <File FileName="BlazorProducts.Server/Context/Configuration/ProductConfiguration.cs" />
+      <File FileName="Entities/Entities.csproj" />
+      <File FileName="BlazorProducts.Server/appsettings.json" Line="15" Column="1" />
+      <File FileName="BlazorProducts.Server/Context/ProductContext.cs" />
+      <File FileName="BlazorProducts.Server/Controllers/ProductsController.cs" />
+      <File FileName="BlazorProducts.Server/MigrationManager/MigrationManager.cs" />
+      <File FileName="BlazorProducts.Server/Properties/launchSettings.json" />
+      <File FileName="BlazorProducts.Server/Repository/IProductRepository.cs" Line="1" Column="1" />
+      <File FileName="BlazorProducts.Server/Repository/ProductRepository.cs" />
+      <File FileName="BlazorProducts.Server/Program.cs" />
+      <File FileName="BlazorProducts.Server/Startup.cs" />
+      <File FileName="BlazorProducts.Server/BlazorProducts.Server.csproj" />
+      <File FileName="BlazorProducts.Server/appsettings.Development.json" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BlazorProducts.Server" expanded="True">
+            <Node name="BlazorProducts.Server" expanded="True">
+              <Node name="Context" expanded="True">
+                <Node name="Configuration" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="MigrationManager" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Repository" expanded="True" />
+              <Node name="appsettings.json" expanded="True" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.BlazorProducts.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
