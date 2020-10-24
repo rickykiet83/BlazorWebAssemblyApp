@@ -13,5 +13,8 @@ namespace BlazorProducts.Client.Components
 
         [CascadingParameter(Name = "HeadingColor")]
         public string Color { get; set; }
+        
+        [Parameter]
+        public RenderFragment VisitShopContent { get; set; }
     }
 }
