@@ -15,7 +15,6 @@ namespace BlazorProducts.Client.HttpRepository
             _client = client;
         }
         
-        
         public async Task<List<Product>> GetProducts()
         {
             var products = await _client.GetFromJsonAsync<List<Product>>("products");

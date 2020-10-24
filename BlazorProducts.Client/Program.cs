@@ -23,7 +23,7 @@ namespace BlazorProducts.Client
             builder.Services.AddHttpClient("ProductsAPI",
                 cl =>
                 {
-                    new Uri("https://localhost:5011/api/");
+                    cl.BaseAddress = new Uri("https://localhost:5011/api/");
                 });
 
             builder.Services.AddScoped(

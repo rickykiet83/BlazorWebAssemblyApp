@@ -1,20 +1,22 @@
 ﻿<Properties StartupConfiguration="{31A916BE-163D-473F-B70E-D2B92BCB7FFE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BlazorProducts.Server/appsettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Entities/RequestFeatures/ProductParameters.cs">
     <Files>
       <File FileName="Entities/Models/Product.cs" Line="1" Column="1" />
-      <File FileName="BlazorProducts.Server/Context/Configuration/ProductConfiguration.cs" />
+      <File FileName="BlazorProducts.Server/Context/Configuration/ProductConfiguration.cs" Line="5" Column="1" />
       <File FileName="Entities/Entities.csproj" />
-      <File FileName="BlazorProducts.Server/appsettings.json" Line="15" Column="1" />
+      <File FileName="BlazorProducts.Server/appsettings.json" Line="11" Column="71" />
       <File FileName="BlazorProducts.Server/Context/ProductContext.cs" />
       <File FileName="BlazorProducts.Server/Controllers/ProductsController.cs" />
       <File FileName="BlazorProducts.Server/MigrationManager/MigrationManager.cs" />
-      <File FileName="BlazorProducts.Server/Properties/launchSettings.json" />
-      <File FileName="BlazorProducts.Server/Repository/IProductRepository.cs" Line="1" Column="1" />
-      <File FileName="BlazorProducts.Server/Repository/ProductRepository.cs" />
+      <File FileName="BlazorProducts.Server/Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="BlazorProducts.Server/Repository/IProductRepository.cs" />
+      <File FileName="BlazorProducts.Server/Repository/ProductRepository.cs" Line="23" Column="76" />
       <File FileName="BlazorProducts.Server/Program.cs" />
       <File FileName="BlazorProducts.Server/Startup.cs" />
       <File FileName="BlazorProducts.Server/BlazorProducts.Server.csproj" />
-      <File FileName="BlazorProducts.Server/appsettings.Development.json" />
+      <File FileName="BlazorProducts.Server/appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="BlazorProducts.Server/Migrations/20200927141508_InitialWithData.cs" Line="1" Column="1" />
+      <File FileName="Entities/RequestFeatures/ProductParameters.cs" Line="7" Column="15" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -29,7 +31,12 @@
               <Node name="Migrations" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Repository" expanded="True" />
-              <Node name="appsettings.json" expanded="True" selected="True" />
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+            <Node name="Entities" expanded="True">
+              <Node name="RequestFeatures" expanded="True">
+                <Node name="ProductParameters.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
