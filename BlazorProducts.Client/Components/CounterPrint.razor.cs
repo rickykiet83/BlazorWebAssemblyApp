@@ -1,5 +1,8 @@
 using System;
+using System.Linq;
 using Microsoft.AspNetCore.Components;
+using Microsoft.Extensions.Logging;
+
 namespace BlazorProducts.Client.Components
 {
     public partial class CounterPrint: IDisposable
@@ -10,20 +13,34 @@ namespace BlazorProducts.Client.Components
         [Parameter]
         public string Title { get; set; }
         
+        [Inject]
+        public ILogger<CounterPrint> Logger { get; set; }
+
+        private void CreateLogs()
+        {
+            var logLevels = Enum.GetValues(typeof(LogLevel)).Cast<LogLevel>();
+
+            foreach (var logLevel in logLevels.Where(l => l != LogLevel.None))
+            {
+                Logger.Log(LogLevel.Information, logLevel.ToString());
+            }
+        }
+        
         protected override void OnInitialized()
         {
-            Console.WriteLine($"OnInitialized => Title: {Title}, CurrentCount: {CurrentCount}");
+            CreateLogs();
+            Logger.Log(LogLevel.Information,$"OnInitialized => Title: {Title}, CurrentCount: {CurrentCount}");
         }
 
         protected override void OnParametersSet()
         {
-            Console.WriteLine($"OnParametersSet => Title: {Title}, CurrentCount: {CurrentCount}");
+            Logger.Log(LogLevel.Information,$"OnParametersSet => Title: {Title}, CurrentCount: {CurrentCount}");
         }
 
         protected override void OnAfterRender(bool firstRender)
         {
             if (firstRender)
-                Console.WriteLine("This is the first render of the component");
+                Logger.Log(LogLevel.Information,"This is the first render of the component");
         }
 
         protected override bool ShouldRender()
@@ -33,7 +50,7 @@ namespace BlazorProducts.Client.Components
 
         public void Dispose()
         {
-            Console.WriteLine("Component removed from the parnet's render tree");
+            Logger.Log(LogLevel.Information,"Component removed from the parnet's render tree");
         }
     }
 }

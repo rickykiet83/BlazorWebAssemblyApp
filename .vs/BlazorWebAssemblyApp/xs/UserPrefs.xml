@@ -7,11 +7,9 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BlazorWebAssemblyApp" expanded="True">
-            <Node name="BlazorProducts.Client" expanded="True">
+            <Node name="BlazorProducts.Client" expanded="True" selected="True">
               <Node name="Components" expanded="True">
-                <Node name="Home.razor" expanded="True">
-                  <Node name="Home.razor.cs" selected="True" />
-                </Node>
+                <Node name="Home.razor" expanded="True" />
               </Node>
               <Node name="Pages" expanded="True" />
             </Node>
