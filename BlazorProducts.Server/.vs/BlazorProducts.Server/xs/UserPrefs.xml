@@ -1,22 +1,9 @@
 ﻿<Properties StartupConfiguration="{31A916BE-163D-473F-B70E-D2B92BCB7FFE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Entities/RequestFeatures/ProductParameters.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BlazorProducts.Server/Repository/ProductRepository.cs">
     <Files>
-      <File FileName="Entities/Models/Product.cs" Line="1" Column="1" />
-      <File FileName="BlazorProducts.Server/Context/Configuration/ProductConfiguration.cs" Line="5" Column="1" />
-      <File FileName="Entities/Entities.csproj" />
-      <File FileName="BlazorProducts.Server/appsettings.json" Line="11" Column="71" />
-      <File FileName="BlazorProducts.Server/Context/ProductContext.cs" />
-      <File FileName="BlazorProducts.Server/Controllers/ProductsController.cs" />
-      <File FileName="BlazorProducts.Server/MigrationManager/MigrationManager.cs" />
+      <File FileName="BlazorProducts.Server/Controllers/ProductsController.cs" Line="13" Column="6" />
       <File FileName="BlazorProducts.Server/Properties/launchSettings.json" Line="1" Column="1" />
-      <File FileName="BlazorProducts.Server/Repository/IProductRepository.cs" />
-      <File FileName="BlazorProducts.Server/Repository/ProductRepository.cs" Line="23" Column="76" />
-      <File FileName="BlazorProducts.Server/Program.cs" />
-      <File FileName="BlazorProducts.Server/Startup.cs" />
-      <File FileName="BlazorProducts.Server/BlazorProducts.Server.csproj" />
-      <File FileName="BlazorProducts.Server/appsettings.Development.json" Line="1" Column="1" />
-      <File FileName="BlazorProducts.Server/Migrations/20200927141508_InitialWithData.cs" Line="1" Column="1" />
-      <File FileName="Entities/RequestFeatures/ProductParameters.cs" Line="7" Column="15" />
+      <File FileName="BlazorProducts.Server/Repository/ProductRepository.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -29,14 +16,16 @@
               <Node name="Controllers" expanded="True" />
               <Node name="MigrationManager" expanded="True" />
               <Node name="Migrations" expanded="True" />
+              <Node name="Paging" expanded="True" />
               <Node name="Properties" expanded="True" />
-              <Node name="Repository" expanded="True" />
+              <Node name="Repository" expanded="True">
+                <Node name="RepositoryExtensions" expanded="True" />
+                <Node name="ProductRepository.cs" selected="True" />
+              </Node>
               <Node name="appsettings.json" expanded="True" />
             </Node>
             <Node name="Entities" expanded="True">
-              <Node name="RequestFeatures" expanded="True">
-                <Node name="ProductParameters.cs" selected="True" />
-              </Node>
+              <Node name="RequestFeatures" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -47,7 +36,9 @@
   <MonoDevelop.Ide.ItemProperties.BlazorProducts.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Volumes/DATA/Projects/dotnetcore/BlazorWebAssembly/CodeMaze/BlazorWebAssemblyApp/BlazorProducts.Server/BlazorProducts.Server/Repository/ProductRepository.cs" relfile="BlazorProducts.Server/Repository/ProductRepository.cs" line="25" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

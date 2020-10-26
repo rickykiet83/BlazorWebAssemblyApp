@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{716EA51A-864B-429B-A938-35A521CD156C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Products.razor.cs">
+    <Files>
+      <File FileName="Pages/Products.razor.cs" Line="25" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BlazorProducts.Client" expanded="True">
+            <Node name="BlazorProducts.Client" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="Products.razor" expanded="True">
+                  <Node name="Products.razor.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.BlazorProducts.Client PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Volumes/DATA/Projects/dotnetcore/BlazorWebAssembly/CodeMaze/BlazorWebAssemblyApp/BlazorProducts.Client/Pages/Products.razor.cs" relfile="Pages/Products.razor.cs" line="24" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
