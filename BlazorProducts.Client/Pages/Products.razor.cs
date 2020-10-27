@@ -36,5 +36,13 @@ namespace BlazorProducts.Client.Pages
             ProductList = pagingResponse.Items;
             MetaData = pagingResponse.Metadata;
         }
+
+        private async Task SetPageSize(int pageSize)
+        {
+            _productParameters.PageSize = pageSize;
+            _productParameters.PageNumber = 1;
+
+            await GetProducts();
+        }
     }
 }
