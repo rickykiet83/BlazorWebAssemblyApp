@@ -21,6 +21,17 @@ namespace BlazorProducts.Client.Pages
 
         protected async override Task OnInitializedAsync()
         {
+            await GetProducts();
+        }
+
+        private async Task SelectedPage(int page)
+        {
+            _productParameters.PageNumber = page;
+            await GetProducts();
+        }
+
+        private async Task GetProducts()
+        {
             var pagingResponse = await ProductRepo.GetProducts(_productParameters);
             ProductList = pagingResponse.Items;
             MetaData = pagingResponse.Metadata;

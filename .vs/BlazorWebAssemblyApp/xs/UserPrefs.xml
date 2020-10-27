@@ -1,18 +1,23 @@
 ﻿<Properties StartupConfiguration="{65B3B975-0D5E-4004-9DBA-E773EEF5B737}|Default">
   <MonoDevelop.Ide.Workbench>
-    <Files>
-      <File FileName="BlazorProducts.Client/Components/Home.razor.cs" Line="17" Column="20" />
-    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BlazorWebAssemblyApp" expanded="True">
-            <Node name="BlazorProducts.Client" expanded="True" selected="True">
+            <Node name="BlazorProducts.Client" expanded="True">
               <Node name="Components" expanded="True">
-                <Node name="Home.razor" expanded="True" />
+                <Node name="Pagination.razor" expanded="True">
+                  <Node name="Pagination.razor.cs" selected="True" />
+                </Node>
+                <Node name="ProductTable.razor" expanded="True" />
               </Node>
-              <Node name="Pages" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="FetchData.razor" expanded="True" />
+                <Node name="ProductDetails.razor" expanded="True" />
+                <Node name="Products.razor" expanded="True" />
+              </Node>
             </Node>
+            <Node name="Entities" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -20,12 +25,19 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.BlazorServer PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.BlazorProducts.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.ItemProperties.BlazorProducts.Client PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <Debugger.DebugSourceFolders />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Volumes/DATA/Projects/dotnetcore/BlazorWebAssembly/CodeMaze/BlazorWebAssemblyApp/BlazorProducts.Client/Pages/Counter.razor" relfile="BlazorProducts.Client/Pages/Counter.razor" line="14" column="1" />
+      <Breakpoint file="/Volumes/DATA/Projects/dotnetcore/BlazorWebAssembly/CodeMaze/BlazorWebAssemblyApp/BlazorProducts.Server/BlazorProducts.Server/Controllers/ProductsController.cs" relfile="BlazorProducts.Server/BlazorProducts.Server/Controllers/ProductsController.cs" line="24" column="1" />
+      <Breakpoint file="/Volumes/DATA/Projects/dotnetcore/BlazorWebAssembly/CodeMaze/BlazorWebAssemblyApp/BlazorProducts.Client/Pages/Products.razor.cs" relfile="BlazorProducts.Client/Pages/Products.razor.cs" line="35" column="1" />
+      <Breakpoint file="/Volumes/DATA/Projects/dotnetcore/BlazorWebAssembly/CodeMaze/BlazorWebAssemblyApp/BlazorProducts.Client/Pages/Products.razor.cs" relfile="BlazorProducts.Client/Pages/Products.razor.cs" line="24" column="1" />
+      <Breakpoint enabled="false" file="/Volumes/DATA/Projects/dotnetcore/BlazorWebAssembly/CodeMaze/BlazorWebAssemblyApp/BlazorProducts.Client/Pages/ProductDetails.razor.cs" relfile="BlazorProducts.Client/Pages/ProductDetails.razor.cs" line="21" column="1" />
+      <Breakpoint file="/Volumes/DATA/Projects/dotnetcore/BlazorWebAssembly/CodeMaze/BlazorWebAssemblyApp/BlazorProducts.Client/Components/Pagination.razor.cs" relfile="BlazorProducts.Client/Components/Pagination.razor.cs" line="50" column="1" />
+      <Breakpoint file="/Volumes/DATA/Projects/dotnetcore/BlazorWebAssembly/CodeMaze/BlazorWebAssemblyApp/BlazorProducts.Client/Components/Pagination.razor.cs" relfile="BlazorProducts.Client/Components/Pagination.razor.cs" line="24" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

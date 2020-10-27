@@ -18,7 +18,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\BlazorProducts.Server\Entities\Entities.csproj" />
+      <ProjectReference Include="..\BlazorProducts.Server\Entities\Entities.csproj">
+        <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+      </ProjectReference>
     </ItemGroup>
-
 </Project>

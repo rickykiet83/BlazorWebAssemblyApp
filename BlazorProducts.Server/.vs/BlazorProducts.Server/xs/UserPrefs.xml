@@ -3,7 +3,7 @@
     <Files>
       <File FileName="BlazorProducts.Server/Controllers/ProductsController.cs" Line="13" Column="6" />
       <File FileName="BlazorProducts.Server/Properties/launchSettings.json" Line="1" Column="1" />
-      <File FileName="BlazorProducts.Server/Repository/ProductRepository.cs" Line="1" Column="1" />
+      <File FileName="BlazorProducts.Server/Repository/ProductRepository.cs" Line="27" Column="49" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -36,9 +36,7 @@
   <MonoDevelop.Ide.ItemProperties.BlazorProducts.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Volumes/DATA/Projects/dotnetcore/BlazorWebAssembly/CodeMaze/BlazorWebAssemblyApp/BlazorProducts.Server/BlazorProducts.Server/Repository/ProductRepository.cs" relfile="BlazorProducts.Server/Repository/ProductRepository.cs" line="25" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
