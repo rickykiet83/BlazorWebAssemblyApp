@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using BlazorProducts.Client.Features;
+using BlazorProducts.Client.HttpInterceptor;
 using BlazorProducts.Client.HttpRepository;
 using Entities.Models;
 using Entities.RequestFeatures;
@@ -9,7 +10,7 @@ using Microsoft.AspNetCore.Components;
 
 namespace BlazorProducts.Client.Pages
 {
-    public partial class Products
+    public partial class Products: IDisposable
     {
         public List<Product> ProductList { get; set; } = new List<Product>();
         public MetaData MetaData { get; set; } = new MetaData();
@@ -18,9 +19,13 @@ namespace BlazorProducts.Client.Pages
         
         [Inject]
         public IProductHttpRepository ProductRepo { get; set; }
+        
+        [Inject]
+        public HttpInterceptorService Interceptor { get; set; }
 
         protected async override Task OnInitializedAsync()
         {
+            Interceptor.RegisterEvent();
             await GetProducts();
         }
 
@@ -59,5 +64,7 @@ namespace BlazorProducts.Client.Pages
 
             await GetProducts();
         }
+
+        public void Dispose() => Interceptor.DisposeEvent();
     }
 }

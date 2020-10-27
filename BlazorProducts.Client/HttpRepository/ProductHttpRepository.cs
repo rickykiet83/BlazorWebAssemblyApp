@@ -41,22 +41,6 @@ namespace BlazorProducts.Client.HttpRepository
                 await _client.GetAsync(QueryHelpers.AddQueryString("products", queryStringParam));
 
             var content = await response.Content.ReadAsStringAsync();
-            if (!response.IsSuccessStatusCode)
-            {
-                var statusCode = response.StatusCode;
-
-                switch (statusCode)
-                {
-                    case  HttpStatusCode.NotFound: _navManager.NavigateTo("/404");
-                        break;
-                    case  HttpStatusCode.Unauthorized: _navManager.NavigateTo("/unauthorize");
-                        break;
-                    default: _navManager.NavigateTo("/error");
-                        break;
-                }
-                
-                return new PagingResponse<Product>();
-            }
             
             var pagingResponse = new PagingResponse<Product>
             {
