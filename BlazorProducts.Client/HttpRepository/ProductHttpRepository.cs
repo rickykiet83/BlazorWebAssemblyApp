@@ -28,7 +28,8 @@ namespace BlazorProducts.Client.HttpRepository
             var queryStringParam = new Dictionary<string, string>
             {
                 ["pageNumber"] = productParameters.PageNumber.ToString(),
-                ["pageSize"] = productParameters.PageSize.ToString()
+                ["pageSize"] = productParameters.PageSize.ToString(),
+                ["searchTerm"] = productParameters.SearchTerm ?? ""
             };
             
             var response = 

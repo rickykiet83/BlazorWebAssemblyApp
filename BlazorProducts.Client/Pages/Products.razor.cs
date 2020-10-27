@@ -44,5 +44,13 @@ namespace BlazorProducts.Client.Pages
 
             await GetProducts();
         }
+        
+        private async Task SearchChanged(string searchTerm)
+        {
+            _productParameters.PageNumber = 1;
+            _productParameters.SearchTerm = searchTerm;
+
+            await GetProducts();
+        }
     }
 }
