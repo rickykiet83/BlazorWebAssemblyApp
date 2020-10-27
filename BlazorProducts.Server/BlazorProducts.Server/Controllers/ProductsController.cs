@@ -25,7 +25,8 @@ namespace BlazorProducts.Server.Controllers
 
             Response.Headers.Add("X-Pagination", JsonConvert.SerializeObject(products.MetaData));
 
-            return Ok(products);
+            // return Ok(products);
+            return NotFound();
         }
 
         [HttpGet("{id}")]
