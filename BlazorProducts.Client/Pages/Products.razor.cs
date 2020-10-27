@@ -52,5 +52,12 @@ namespace BlazorProducts.Client.Pages
 
             await GetProducts();
         }
+
+        private async Task SortChanged(string orderBy)
+        {
+            _productParameters.OrderBy = orderBy;
+
+            await GetProducts();
+        }
     }
 }

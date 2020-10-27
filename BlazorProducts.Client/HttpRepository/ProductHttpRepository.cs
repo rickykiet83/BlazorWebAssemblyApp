@@ -29,7 +29,8 @@ namespace BlazorProducts.Client.HttpRepository
             {
                 ["pageNumber"] = productParameters.PageNumber.ToString(),
                 ["pageSize"] = productParameters.PageSize.ToString(),
-                ["searchTerm"] = productParameters.SearchTerm ?? ""
+                ["searchTerm"] = productParameters.SearchTerm ?? "",
+                ["orderBy"] = productParameters.OrderBy ?? ""
             };
             
             var response = 
