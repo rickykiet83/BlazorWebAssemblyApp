@@ -4,18 +4,7 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BlazorWebAssemblyApp" expanded="True">
-            <Node name="BlazorProducts.Client" expanded="True" selected="True">
-              <Node name="Components" expanded="True">
-                <Node name="Pagination.razor" expanded="True" />
-                <Node name="ProductTable.razor" expanded="True" />
-              </Node>
-              <Node name="Pages" expanded="True">
-                <Node name="FetchData.razor" expanded="True" />
-                <Node name="ProductDetails.razor" expanded="True" />
-                <Node name="Products.razor" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="Entities" expanded="True" />
+            <Node name="Entities" expanded="True" selected="True" />
           </Node>
         </State>
       </Pad>
