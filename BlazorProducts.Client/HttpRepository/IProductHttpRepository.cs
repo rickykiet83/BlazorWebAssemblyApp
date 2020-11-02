@@ -10,5 +10,6 @@ namespace BlazorProducts.Client.HttpRepository
     {
         Task<PagingResponse<Product>> GetProducts(ProductParameters productParameters);
         Task<Product> GetProduct(Guid id);
+        Task CreateProduct(Product product);
     }
 }

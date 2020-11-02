@@ -58,5 +58,7 @@ namespace BlazorProducts.Client.HttpRepository
 
             return product;
         }
+
+        public async Task CreateProduct(Product product) => await _client.PostAsJsonAsync("products", product);
     }
 }

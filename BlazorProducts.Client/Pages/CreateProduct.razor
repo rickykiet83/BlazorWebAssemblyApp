@@ -1,0 +1,47 @@
+@page "/createProduct"
+
+<h2>Create new Product</h2>
+
+<EditForm EditContext="_editContext" OnValidSubmit="Create" class="card card-body bg-light mt-5">
+    <DataAnnotationsValidator/>
+    <div class="form-group row">
+        <label for="name" class="col-md-2 col-form-label">Name</label>
+        <div class="col-md-10">
+            <InputText id="name" class="form-control" @bind-Value="_product.Name"></InputText>
+            <ValidationMessage For="@(() => _product.Name)"></ValidationMessage>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="description" class="col-md-2 col-form-label">Description</label>
+        <div class="col-md-10">
+            <InputTextArea id="description" class="form-control" @bind-Value="_product.Description"></InputTextArea>
+            <ValidationMessage For="@(() => _product.Description)"></ValidationMessage>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="supplier" class="col-md-2 col-form-label">Supplier</label>
+        <div class="col-md-10">
+            <InputText id="supplier" class="form-control" @bind-Value="_product.Supplier"></InputText>
+            <ValidationMessage For="@(() => _product.Supplier)"></ValidationMessage>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="price" class="col-md-2 col-form-label">Price</label>
+        <div class="col-md-10">
+            <InputNumber id="price" class="form-control" @bind-Value="_product.Price"></InputNumber>
+            <ValidationMessage For="@(() => _product.Price)"></ValidationMessage>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="image" class="col-md-2 col-form-label">Image</label>
+        <div class="col-md-10">
+            <InputText id="image" class="form-control" @bind-Value="_product.ImageUrl"></InputText>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 text-right">
+            <button type="submit" class="btn btn-success" disabled="@formInvalid">Create</button>
+        </div>
+    </div>
+</EditForm>
