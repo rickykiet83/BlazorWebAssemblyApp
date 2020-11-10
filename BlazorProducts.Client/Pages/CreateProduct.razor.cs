@@ -57,6 +57,8 @@ namespace BlazorProducts.Client.Pages
             _editContext.OnValidationStateChanged -= ValidationChanged;
         }
 
+        private void AssignImageUrl(string imgUrl) => _product.ImageUrl = imgUrl;
+
         public void Dispose()
         {
             Interceptor.DisposeEvent();

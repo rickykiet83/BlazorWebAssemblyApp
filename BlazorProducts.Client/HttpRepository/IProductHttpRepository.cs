@@ -1,4 +1,5 @@
 using System;
+using System.Net.Http;
 using System.Threading.Tasks;
 using BlazorProducts.Client.Features;
 using Entities.Models;
@@ -11,5 +12,6 @@ namespace BlazorProducts.Client.HttpRepository
         Task<PagingResponse<Product>> GetProducts(ProductParameters productParameters);
         Task<Product> GetProduct(Guid id);
         Task CreateProduct(Product product);
+        Task<string> UploadProductImage(MultipartFormDataContent content);
     }
 }

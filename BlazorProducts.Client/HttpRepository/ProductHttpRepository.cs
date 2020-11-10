@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-using System.Net;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Text.Json;
@@ -60,5 +60,13 @@ namespace BlazorProducts.Client.HttpRepository
         }
 
         public async Task CreateProduct(Product product) => await _client.PostAsJsonAsync("products", product);
+        public async Task<string> UploadProductImage(MultipartFormDataContent content)
+        {
+            var postResult = await _client.PostAsync("upload", content);
+            var postContent = await postResult.Content.ReadAsStringAsync();
+            var imgUrl = Path.Combine("https://localhost:5011/", postContent);
+
+            return imgUrl;
+        }
     }
 }

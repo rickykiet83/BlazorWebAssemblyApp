@@ -29,5 +29,8 @@
       <None Update="Components\PageSizeDropDown.razor.css">
         <DependentUpon>PageSizeDropDown.razor</DependentUpon>
       </None>
+      <None Update="Shared\ImageUpload.razor.css">
+        <DependentUpon>ImageUpload.razor</DependentUpon>
+      </None>
     </ItemGroup>
 </Project>
