@@ -1,5 +1,6 @@
 using System;
 using System.Threading.Tasks;
+using Blazored.Toast.Services;
 using BlazorProducts.Client.HttpInterceptor;
 using BlazorProducts.Client.HttpRepository;
 using Entities.Models;
@@ -19,6 +20,9 @@ namespace BlazorProducts.Client.Pages
 
         [Inject]
         public HttpInterceptorService Interceptor { get; set; }
+        
+        [Inject]
+        public IToastService ToastService { get; set; }
 
         protected override void OnInitialized()
         {
@@ -36,8 +40,28 @@ namespace BlazorProducts.Client.Pages
         private async Task Create()
         {
             await ProductRepo.CreateProduct(_product);
+            
+            ToastService.ShowSuccess($"Action successful. " +
+                                     $"Product \"{_product.Name} successfully added.");
+            _product = new Product();
+            _editContext.OnValidationStateChanged += ValidationChanged;
+            _editContext.NotifyValidationStateChanged();
         }
 
-        public void Dispose() => Interceptor.DisposeEvent();
+        private void ValidationChanged(object? sender, ValidationStateChangedEventArgs e)
+        {
+            formInvalid = true;
+            _editContext.OnFieldChanged -= HandleFieldChanged;
+            _editContext = new EditContext(_product);
+            _editContext.OnFieldChanged += HandleFieldChanged;
+            _editContext.OnValidationStateChanged -= ValidationChanged;
+        }
+
+        public void Dispose()
+        {
+            Interceptor.DisposeEvent();
+            _editContext.OnFieldChanged -= HandleFieldChanged;
+            _editContext.OnValidationStateChanged -= ValidationChanged;
+        }
     }
 }

@@ -1,12 +1,10 @@
 using System;
 using System.Net.Http;
-using System.Collections.Generic;
 using System.Threading.Tasks;
-using System.Text;
+using Blazored.Toast;
 using BlazorProducts.Client.HttpInterceptor;
 using BlazorProducts.Client.HttpRepository;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Toolbelt.Blazor.Extensions.DependencyInjection;
@@ -28,6 +26,8 @@ namespace BlazorProducts.Client
                     cl.BaseAddress = new Uri("https://localhost:5011/api/");
                     cl.EnableIntercept(sp);
                 });
+
+            builder.Services.AddBlazoredToast();
 
             builder.Services.AddScoped(
                 sp => sp.GetService<IHttpClientFactory>().CreateClient("ProductsAPI"));
